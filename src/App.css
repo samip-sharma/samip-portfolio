@@ -1,22 +1,296 @@
-.App {
-  text-align: center;
+
+
+:root {
+  --off-white: #fafafa;
+}
+.nav {
+  background-color: var(--off-white);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.section {
+  padding-top:100px;
+}
+
+.section-dark {
+  background: #333;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.section-content {
+  /* max-width: 800px; */
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 40px;
 }
+
+
+.project-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* flipping card */
+/* start */
+
+
+.card-container {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.card-container:hover .card{
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+.card {
+  -webkit-transition: -webkit-transform 0.7s;
+          transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front img{
+width: 350px;
+height:60%;
+}
+
+.back img{ 
+width: 350px;
+height:60%;
+}
+
+.back {
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+/*Custom Styles*/
+.cards-container{
+  margin:15px;
+ display: -webkit-flex;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-direction: row;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+         flex-direction: row;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.card {
+width: 350px;
+height: 500px;
+margin: 10px;
+}
+
+.front, .back {
+box-shadow: 0 1px 6px 0;
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 0;
+padding: 10px;
+}
+
+img {
+display: block;
+}
+
+
+
+/* flipping card */
+/* end */
+
+
+.animated-typing-component span{
+  color: white;
+  font-size: 60px;
+  font-family: 'Cinzel', serif;
+}
+
+
+.project-links-container{
+  text-align: center;
+}
+
+
+.project-links-container div a{
+  text-decoration: none;
+  width:200px;
+  padding:2.px;
+
+
+}
+
+
+.project-links-container div {
+  width: 100%;
+  margin: 10px;
+}
+
+.skill-card{
+padding:0 50px 50px 50px;
+margin-left: 20px;
+text-align: center;
+
+}
+
+.skill-card img{
+  height:100px;
+} 
+
+.skills-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ /* justify-content: space-between */
+
+}
+
+.my-info-container{
+  padding-top: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.info-box{
+  padding:15px;
+  margin:20px;
+  height: 80%;
+  border:1px solid red;
+}
+
+.info-box.left-info{
+  width:50%;
+}
+
+.info-box.right-info{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-image{
+  height:400px;
+  padding: 5px;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.my-image img{
+  height :100%;
+  width: 100%;
+}
+
+.links-container{
+  margin-top:15px;
+  height: 80px;
+display: flex;
+flex-direction: column;
+justify-content: space-between
+}
+
+.links-container a{
+  color:white;
+  text-decoration: none;
+}
+.links-container a i{
+  margin-right: 5px;
+}
+
+
+.input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.contactme-form{
+  position: relative;
+  bottom:-100px;
+  /* left:300px; */
+  width:500px;
+}
+  
+
+  .contactme-wrapper{
+    height:100%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   }
+
+
+.submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+

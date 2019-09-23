@@ -1,0 +1,40 @@
+export const SKILLS=[{
+    name:"CSS",
+    logo:'CSS.3.svg'
+},
+{
+    name:"Git",
+    logo:'git.png'
+},
+{
+    name:"HTML",
+    logo:'html.svg'
+},
+{
+    name:"Java Script",
+    logo:'js.png'
+},
+{
+    name:"Postgresql",
+    logo:'postgresql.png'
+},
+{
+    name:"Rails",
+    logo:'rails-1-logo.png'
+},
+{
+    name:"React",
+    logo:'react.png'
+},
+{
+    name:"Redux",
+    logo:'redux.png'
+},
+{
+    name:"Ruby",
+    logo:"ruby.png"
+},
+{
+    name:"sqlite",
+    logo:"sqlite.png"
+}]
