@@ -13,6 +13,7 @@ function AnimatedTypingComponent(props){
     >
         <span >Hello.</span>
         <Typing.Backspace count={6} />
+        <Typing.Backspace count={6} />
         <span>My name is Samip</span>
         <Typing.Backspace count={16} />
         <span>I am a web developer.</span>

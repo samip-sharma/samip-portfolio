@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Navbar />
       <AboutMe
-          dark={true}
+          dark={false}
           id="section1"
         />
         <Projects

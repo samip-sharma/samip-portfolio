@@ -33,7 +33,8 @@ export const PROJECTS=[
     imgBack:"tvproject02.png",
     github:"https://github.com/samip-sharma/Tv-project",
     live:"https://samip-sharma.github.io/Tv-project/",
-    js:true
+    js:true,
+    rails:true
 },
 {
     name:"Instagram_clone ",
