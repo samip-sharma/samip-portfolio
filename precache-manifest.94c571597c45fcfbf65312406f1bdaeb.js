@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea6ba3a57a4218735f140db129a8e8f9",
+    "revision": "aa7cebd119d3376ddc922dfbc082fb5c",
     "url": "/samip-portfolio/index.html"
   },
   {
-    "revision": "5f63d7211c0c8191c831",
+    "revision": "3b775cf300a7a6f10da6",
     "url": "/samip-portfolio/static/css/2.70c021c7.chunk.css"
   },
   {
-    "revision": "9f2144c5b2d8ceec08da",
-    "url": "/samip-portfolio/static/css/main.1f943fce.chunk.css"
+    "revision": "88600100ee24d3ff6392",
+    "url": "/samip-portfolio/static/css/main.d4045c6b.chunk.css"
   },
   {
-    "revision": "5f63d7211c0c8191c831",
-    "url": "/samip-portfolio/static/js/2.318545ac.chunk.js"
+    "revision": "3b775cf300a7a6f10da6",
+    "url": "/samip-portfolio/static/js/2.caba0ac7.chunk.js"
   },
   {
-    "revision": "9f2144c5b2d8ceec08da",
-    "url": "/samip-portfolio/static/js/main.4c8180cc.chunk.js"
+    "revision": "88600100ee24d3ff6392",
+    "url": "/samip-portfolio/static/js/main.35e75741.chunk.js"
   },
   {
     "revision": "909497ba1732a23ca0c2",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1f0f3724598e4166fad36a2c2173fbe3",
     "url": "/samip-portfolio/static/media/js.1f0f3724.png"
+  },
+  {
+    "revision": "12fa9a7cf71efc815d833b77ec0a899a",
+    "url": "/samip-portfolio/static/media/logo.12fa9a7c.png"
   },
   {
     "revision": "fd9941c7901d56d2fe08d0250ec8feaf",

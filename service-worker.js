@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/samip-portfolio/precache-manifest.1586b464ee5d7477c4bf89c935920954.js"
+  "/samip-portfolio/precache-manifest.94c571597c45fcfbf65312406f1bdaeb.js"
 );
 
 self.addEventListener('message', (event) => {
