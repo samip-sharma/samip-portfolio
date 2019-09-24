@@ -10,8 +10,8 @@ export default class Navbar extends Component {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
-          <ul className="nav-items">
-          <li className="nav-item">
+          <div className="nav-items">
+          <div className="nav-item">
               <Link
                 activeClass="active"
                 to="root"
@@ -20,11 +20,11 @@ export default class Navbar extends Component {
                 offset={0}
                 duration={1000}
               >
-                logo
+              <span> <img style={{height:"40px"}} src={require(`../image/logo.png`)} /></span> 
               </Link>
-            </li>
+            </div>
 
-            <li className="nav-item">
+            <div className="nav-item">
               <Link
                 activeClass="active"
                 to="root"
@@ -35,8 +35,8 @@ export default class Navbar extends Component {
               >
                 About Me
               </Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link
                 activeClass="active"
                 to="projects-container"
@@ -47,8 +47,8 @@ export default class Navbar extends Component {
               >
                 Projects
               </Link>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className="nav-item">
               <Link
                 activeClass="active"
                 to="skills-container"
@@ -59,8 +59,8 @@ export default class Navbar extends Component {
               >
                 Skills
               </Link>
-              </li>
-              <li className="nav-item">
+              </div>
+              <div className="nav-item">
               <Link
                 activeClass="active"
                 to="contactme-container"
@@ -71,9 +71,9 @@ export default class Navbar extends Component {
               >
                 Contact Me
               </Link>
-              </li>
+              </div>
               
-          </ul>
+          </div>
         </div>
       </nav>
     );

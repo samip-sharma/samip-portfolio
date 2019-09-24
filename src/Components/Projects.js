@@ -44,14 +44,14 @@ export default class Projects extends React.Component{
                 <div className={"section" + (dark ? " section-dark" : "")}>
                     <div className="section-content" id={id}>
                         <h1 className="projects-heading">{"Projects"}</h1>
-                            <span className="project-filter-buttons">
+                            <div className="project-filter-buttons">
                                 
                             <button onClick={this.handleClearFilterButton}>All</button>
                                 <button onClick={()=>this.handleFilterClick("js")} >JS</button>
                                 <button onClick={()=>this.handleFilterClick("react")}>React</button>
                                 <button onClick={()=>this.handleFilterClick("redux")}>Redux</button>
                                 <button onClick={()=>this.handleFilterClick("rails")}>Rails</button>
-                                </span>
+                                </div>
                         <div className="project-container">
                         {eachProject}
                         </div>

@@ -7,8 +7,9 @@ function AnimatedTypingComponent(props){
   return(
   <React.Fragment>
     <Typing 
+    startDelay={100}
     className="animated-typing-component" 
-    speed={50}
+    speed={100}
     onFinishedTyping={()=>{}}
     >
         <span >Hello.</span>
