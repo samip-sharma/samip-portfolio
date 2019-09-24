@@ -2,7 +2,7 @@
   "name": "samip-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.samipsharma.com",
+  "homepage": "https://www.samipsharma.com",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "in-view": "^0.6.1",
