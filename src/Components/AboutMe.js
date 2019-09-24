@@ -65,7 +65,7 @@ const AboutMe = () => (
             from={{ x: '-100%' }}
             to={{ x: '0%' }}
           >
-            <section className="panel info">
+            <section id="my-info" className="panel info">
               <div className="my-info-container">
 
                 <div  className="info-box left-info">

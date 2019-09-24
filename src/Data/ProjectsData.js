@@ -42,7 +42,8 @@ export const PROJECTS=[
     imgFront:"insta01.png",
     imgBack:"insta02.png",
     github:"https://github.com/samip-sharma/Instagram_clone",
-    rails:true
+    rails:true,
+    video:"https://www.youtube.com/watch?v=PdAgqr__NPE"
 }
 
 
