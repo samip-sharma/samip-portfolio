@@ -62,6 +62,7 @@
 
 
 .project-container{
+  padding-top:30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -192,6 +193,7 @@ text-align: center;
 } 
 
 .skills-container{
+  padding-top:20px;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
