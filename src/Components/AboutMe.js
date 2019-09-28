@@ -73,14 +73,12 @@ const AboutMe = () => (
                   <br />
                     <h1 style={{"font-family": "'Playfair Display SC', serif"}}>SAMIP SHARMA</h1>
                     <br />
-                    I am a Full-stack web developer contributing in this growing tech
-                    industry by utilizing my soft and hard skills to achieve better 
-                    innovative technical solutions and outcomes, 
-                    One of my greatest passion is technology and building new products
-                    and tools so that people will use and love. 
-                    In addition to software development,
-                    I completed my bachelor's in civil engineering that helps me think technically,
-                    solve problems, work with teams and face new challenges.
+                    I am a full-stack web developer contributing to this growing
+                     tech industry by using my hard and soft skills to provide innovation
+                      in technical solutions and outcomes. One of my greatest passions is
+                       technology and building new products and tools that people will use and love.
+                        I completed my bachelor's degree in civil engineering, which helps me think technically,
+                         solve problems critically, work with teams, and face new challenges every day.
                   </p>
                   <MyInfo />
                 </div>
