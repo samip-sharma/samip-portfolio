@@ -26,6 +26,10 @@
   height: 100%;
 }
 
+.each-skill{
+  padding-top: 9px;
+}
+
 .nav-items{
   display: flex;
   flex-direction: row;
