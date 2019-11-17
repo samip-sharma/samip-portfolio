@@ -9,6 +9,10 @@ export default class Navbar extends Component {
   handleHamburgerClick=(e)=>{
     const navLinks= document.querySelector(".nav-items")
     navLinks.classList.toggle('open');
+    const links= document.querySelectorAll(".nav-item")
+    links.forEach(link=>{
+      link.classList.toggle("fade")
+    })
   }
 
   render() {
@@ -21,9 +25,7 @@ export default class Navbar extends Component {
           <div class="line"></div>
           <div class="line"></div>
         </div>
-
-          <div className="nav-items">
-          <div className="nav-item">
+        <div className="nav-item">
               <Link
                 activeClass="active"
                 to="root"
@@ -35,6 +37,9 @@ export default class Navbar extends Component {
               <span> <img style={{height:"40px"}} src={require(`../image/logo.png`)} /></span> 
               </Link>
             </div>
+
+          <div className="nav-items">
+          
 
             <div className="nav-item">
               <Link
@@ -87,10 +92,7 @@ export default class Navbar extends Component {
               
           </div>
 
-          <section class="landing">
-            <img src={require('../image/circles.svg')} alt="dots" />
-            <h1>Dots</h1>
-          </section>
+          
         </div>
       </nav>
     );
