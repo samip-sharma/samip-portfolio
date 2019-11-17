@@ -6,10 +6,22 @@ export default class Navbar extends Component {
     scroll.scrollToTop();
   };
 
+  handleHamburgerClick=(e)=>{
+    const navLinks= document.querySelector(".nav-items")
+    navLinks.classList.toggle('open');
+  }
+
   render() {
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
+
+        <div onClick={this.handleHamburgerClick} class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
           <div className="nav-items">
           <div className="nav-item">
               <Link
@@ -74,6 +86,11 @@ export default class Navbar extends Component {
               </div>
               
           </div>
+
+          <section class="landing">
+            <img src={require('../image/circles.svg')} alt="dots" />
+            <h1>Dots</h1>
+          </section>
         </div>
       </nav>
     );
