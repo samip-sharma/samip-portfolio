@@ -15,17 +15,19 @@ export default class Navbar extends Component {
     })
   }
 
+  handleLinksClick=()=>{
+    const navLinks= document.querySelector(".nav-items")
+    navLinks.classList.toggle('open');
+  }
+
   render() {
     return (
       <nav className="nav" id="navbar">
+        
+
         <div className="nav-content">
 
-        <div onClick={this.handleHamburgerClick} class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <div className="nav-item">
+        <div className="nav-logo" >
               <Link
                 activeClass="active"
                 to="root"
@@ -38,11 +40,19 @@ export default class Navbar extends Component {
               </Link>
             </div>
 
+        <div onClick={this.handleHamburgerClick} class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        
+
           <div className="nav-items">
           
 
             <div className="nav-item">
               <Link
+              onClick={this.handleLinksClick}
                 activeClass="active"
                 to="root"
                 spy={true}
@@ -55,6 +65,7 @@ export default class Navbar extends Component {
             </div>
             <div className="nav-item">
               <Link
+              onClick={this.handleLinksClick}
                 activeClass="active"
                 to="projects-container"
                 spy={true}
@@ -67,6 +78,7 @@ export default class Navbar extends Component {
             </div>
             <div className="nav-item">
               <Link
+              onClick={this.handleLinksClick}
                 activeClass="active"
                 to="skills-container"
                 spy={true}
@@ -79,6 +91,7 @@ export default class Navbar extends Component {
               </div>
               <div className="nav-item">
               <Link
+              onClick={this.handleLinksClick}
                 activeClass="active"
                 to="contactme-container"
                 spy={true}
