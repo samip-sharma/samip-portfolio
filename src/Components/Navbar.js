@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import {Link as RouterLink} from 'react-router-dom'
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -102,6 +103,12 @@ export default class Navbar extends Component {
                 Contact Me
               </Link>
               </div>
+
+              <div className="nav-item">
+              <RouterLink to="/animation">
+                Animations
+              </RouterLink>
+            </div>
               
           </div>
 

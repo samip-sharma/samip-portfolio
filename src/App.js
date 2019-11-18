@@ -5,31 +5,38 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import AboutMe from './Components/AboutMe'
 import ContactMe from './Components/ContactMe'
+import { Switch, Route } from 'react-router-dom'
+import Animation from './Components/Animation'
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <AboutMe
-          dark={false}
-          id="section1"
-        />
-        <Projects
-          dark={false}
-          id="projects-container"
-        />
-        <Skills
-          dark={true}
-          id="skills-container"
-        />
-        <ContactMe
-          title="Contact-me"
-          dark={false}
-          id="contactme-container"
-        />
+    <React.Fragment>
+      <Switch>
 
-    </div>
+        <Route exact path='/' render={(routerProps)=>  <div className="App">
+            <Navbar />
+            <AboutMe
+                dark={false}
+                id="section1"
+              />
+              <Projects
+                dark={false}
+                id="projects-container"
+              />
+              <Skills
+                dark={true}
+                id="skills-container"
+              />
+              <ContactMe
+                title="Contact-me"
+                dark={false}
+                id="contactme-container"
+              />
+          </div>} />
+        <Route exact path='/animation' render={(routerProps)=> <Animation  {...routerProps}/>} />
+      </Switch> 
+    </React.Fragment>
   );
 }
 
