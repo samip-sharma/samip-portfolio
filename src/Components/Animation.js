@@ -5,7 +5,7 @@ export default class Animation extends React.Component{
     render(){
         return(
             <React.Fragment>
-                {/* <SvgLaptopMan /> */}
+                <SvgLaptopMan />
             </React.Fragment>
         )
     }

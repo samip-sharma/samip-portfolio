@@ -104,11 +104,11 @@ export default class Navbar extends Component {
               </Link>
               </div>
 
-              <div className="nav-item">
+              {/* <div className="nav-item">
               <RouterLink to="/animation">
                 Animations
               </RouterLink>
-            </div>
+            </div> */}
               
           </div>
 

@@ -513,3 +513,200 @@ margin-left:50px;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+.laptop {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#cccccc;
+}
+.body {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#deaa87;
+}
+.shoe-shadow {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#0000ff;
+}
+.shoe {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#c83737;
+}
+.laptop-logo {
+    stroke-width:0.20636757;
+    fill:#f9f9f9;
+}
+.head-phone {
+    display:inline;
+    fill:#0000ff;
+}
+.head-phone-shadow {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#00ffff;
+}
+.mouth {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    display:inline;
+    fill:#deaa87;
+}
+.beard {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#000000;
+}
+.coat {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#0000ff;
+}
+.outer-coat {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#00ffff;
+}
+.t-shirt {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#ffffff;
+}
+.hair {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#000000;
+}
+
+.shorts {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#0000ff;
+}
+.body {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#deaa87;
+}
+.couch-lower {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#ff6600;
+}
+.couch-seat {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#e9afaf;
+}
+.couch-support {
+    stroke-linejoin:miter;
+    stroke-opacity:1;
+    stroke:#000000;
+    stroke-linecap:butt;
+    stroke-width:0.26458332px;
+    fill:#ffb380;
+}
+
+#path1237{
+  fill:none;
+  stroke:#000000;
+  stroke-width:0.26458332px;
+  stroke-linecap:butt;
+  stroke-linejoin:miter;
+  stroke-opacity:1
+}
+
+#path1164{
+  fill:#deaa87;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1
+}
+
+#path1223{
+  fill:#deaa87;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1
+}
+
+#path1107{
+  fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1
+}
+
+.head-phone path{
+  fill:#0000ff;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1
+}
+
+#path1167{
+  fill:#cccccc;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1
+}
+
+#path1170{
+  fill:#0000ff;stroke-width:0.26458332
+}
+
+.brown{
+  fill:brown;
+}
+
+.black{
+  fill:black !important;
+}
+
+.pink{
+  fill:pink;
+}
+
+svg{
+  background: black;
+}
