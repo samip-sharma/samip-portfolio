@@ -7,7 +7,8 @@ class ContactMe extends React.Component{
   state={
     name:'',
     email:'',
-    message:''
+    message:'',
+    messageSent:false
   }
 
   handleInputChange=(e)=>{
@@ -29,7 +30,8 @@ class ContactMe extends React.Component{
        this.setState({
          name:'',
          email:'',
-         message:''
+         message:'',
+         messageSent:true
        })
        
 }
@@ -48,6 +50,7 @@ class ContactMe extends React.Component{
             <input value={this.state.message} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Message" name="message" size="50" />
             <input  className="submit-btn" type="submit" value="Send" />
             <input className="submit-btn" type="reset" value="Reset" />
+            {this.state.messageSent? <p>Message sent!!</p> : null}
             </form>
           </div>
           </div>
