@@ -19,7 +19,7 @@ function AnimatedTypingComponent(props){
         <Typing.Backspace count={16} />
         <span>I am a web developer.</span>
         <Typing.Backspace count={21} />
-        <span>Welcome to my website</span>
+        <span> click On the Image!!</span>
         
     </Typing>
   </React.Fragment>)

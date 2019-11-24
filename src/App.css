@@ -12,6 +12,7 @@
 
 
 
+
 @media screen and (max-width: 768px) {
 
   .line{
@@ -238,8 +239,9 @@ display: block;
 
 .animated-typing-component span{
   color: white;
-  font-size: 60px;
+  /* font-size: 200% !important; */
   font-family: 'Cinzel', serif;
+  min-width: 50%;
 }
 
 
@@ -434,10 +436,27 @@ margin-left:50px;
   margin-bottom: 20px;
 }
 
+.front-page-container{
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
 
 
 
 @media only screen and (max-width: 600px) {
+
+  .front-page-container{
+    flex-direction: column;
+  }
+  .front-page-container div{
+    height:50vh;
+    }
+
+    .animated-typing-component{
+      display: none;
+    }
   .my-info-container{
     padding-top:80px;
     height: 100%;
@@ -475,6 +494,8 @@ margin-left:50px;
     font-size: 12px;
   }
 
+  
+
   .section-content{
     padding: 0px;
     padding-top:15px;
@@ -511,19 +532,93 @@ margin-left:50px;
       padding: 0;
     }
 
+    .laptop-man{
+      min-height: 100vh;
+      min-width: 100vw;
+    }
+
 
 }
 
 
 
+/* new svg */
+.laptop-man{
+  max-width: 50%;
+  background: black;
+}
+
+/* hands */
+#hands-svg{
+animation: hands 1s ease-in-out infinite alternate;
+transform-origin: center;
+}
+@keyframes hands{
+  0%   {transform: rotate(-1deg);}
+  /* 20%  {transform: rotate(1deg);} */
+  /* 40%  {transform: rotate(-1deg);} */
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  /* 80%  {transform: rotate(-1deg) scaleY(0.92);} */
+  100% {transform: rotate(1deg);}
+}
+
+
+/* flowers */
+#Vector_114, #Vector_117{
+  animation: flowers1 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+  }
+
+  #Vector_116, #Vector_115{
+    animation: flowers2 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    }
+
+    @keyframes flowers1{
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(5deg);
+      }
+    }
+
+  @keyframes flowers2{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(-5deg);
+    }
+  }
+
+ 
+/* clouds */
+
+.cloud{
+  animation: cloud 10s ease-in-out infinite ;
+  transform-origin: center;
+  /* transform-box: fill-box; */
+  }
+
+  @keyframes cloud{
+    from{
+      transform: translateX(-38%);
+    }
+    to{
+      transform: translateX(+35%);
+    }
+  }
+
+  /* color change day */
 
 
 
 
-
-
-
-.laptop {
+/* old svg */
+/* .laptop {
     stroke-linejoin:miter;
     stroke-opacity:1;
     stroke:#000000;
@@ -707,6 +802,7 @@ margin-left:50px;
   fill:pink;
 }
 
-svg{
-  background: black;
-}
+ */
+ 
+
+

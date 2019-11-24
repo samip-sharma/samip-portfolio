@@ -5,6 +5,7 @@ import { Tween, Timeline } from 'react-gsap';
 import AnimatedTypingComponent from './AnimatedTypingComponent'
 import ParticleBackground from './ParticleBackground'
 import MyInfo from './MyInfo'
+import SvgLaptopMan from '../Animation/svgLaptopMan'
 
 
 const SectionWipes2Styled = styled.div`
@@ -29,7 +30,7 @@ const SectionWipes2Styled = styled.div`
   
   .panel.blue {
     background: rgb(80,105,222);
-    background: radial-gradient(circle, rgba(80,105,222,1) 34%, rgba(34,34,48,1) 94%);  }
+    background: black;  }
   
   .panel.info {
     background-color: rgb(68,	112	,224)	;
@@ -46,6 +47,7 @@ const SectionWipes2Styled = styled.div`
 
 const AboutMe = () => (
   <SectionWipes2Styled>
+    
     <Controller >
       <Scene    
         triggerHook="onLeave"
@@ -55,11 +57,14 @@ const AboutMe = () => (
         <Timeline
           wrapper={<div id="pinContainer" />}
         >
-          <section id="section1" className="panel blue">
-              <span>
-              <AnimatedTypingComponent />
-                <ParticleBackground />
-              </span>
+          
+          <section  id="section1" className="panel blue">
+              < div className="front-page-container">
+                  <SvgLaptopMan />
+                  <AnimatedTypingComponent />
+                </div>
+                {/* <ParticleBackground /> */}
+              
               </section>
           <Tween
             from={{ x: '-100%' }}
