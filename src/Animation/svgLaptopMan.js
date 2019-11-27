@@ -34,7 +34,7 @@ export default class SvgLaptopMan extends React.Component{
         .to("#window-four path", 0.5, {"fill":"rgb(58,139,209)"},0.1)
         .to("#Vector_82", 0.7, {"fill":"rgb(242,187,90)"}, 0.1); 
 
-        this.clockHandTween=TweenLite.to("#clock-hand", 1, {"rotation":"360",transformOrigin:"50% 100%"},0.1)
+        this.clockHandTween=TweenLite.to("#clock-hand", 1, {"rotation":"360",transformOrigin:"50% 100%"})
         
     }
 
