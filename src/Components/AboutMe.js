@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import AnimatedTypingComponent from './AnimatedTypingComponent'
-import ParticleBackground from './ParticleBackground'
+// import ParticleBackground from './ParticleBackground'
 import MyInfo from './MyInfo'
 import SvgLaptopMan from '../Animation/svgLaptopMan'
 
