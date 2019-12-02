@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import AnimatedTypingComponent from './AnimatedTypingComponent'
-// import ParticleBackground from './ParticleBackground'
 import MyInfo from './MyInfo'
 import SvgLaptopMan from '../Animation/svgLaptopMan'
 
@@ -62,9 +61,7 @@ const AboutMe = () => (
               < div className="front-page-container">
                   <SvgLaptopMan />
                   <AnimatedTypingComponent />
-                </div>
-                {/* <ParticleBackground /> */}
-              
+                </div>            
               </section>
           <Tween
             from={{ x: '-100%' }}
@@ -89,7 +86,7 @@ const AboutMe = () => (
                 </div>
 
                   <div className="my-image">
-                    <img src={require('../image/mypic.png')} />
+                    <img src={require('../image/mypic.png')} alt="samip" />
                   </div>
               </div>
               </section>

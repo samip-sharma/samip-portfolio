@@ -1,14 +1,9 @@
 import React from 'react'
 import {SKILLS} from '../Data/SkillData'
-import {TweenLite, Back, TweenMax ,Bounce} from "gsap";
+import {TweenMax ,Bounce} from "gsap";
 
 
 export default class Skills extends React.Component{
-
-    componentDidMount(){
-        // TweenLite.from(".each-skill", 2, {x: 0, y:0 , backgroundColor:"red" , rotation:360 ,scale:0.9 , ease:Back.easeOut});
-        // TweenMax.from(".skill-card", 0.5, {ease:Bounce.easeOut , opacity:0 });
-      }
 
       handleSkillClick=(e)=>{
         TweenMax.from(e.currentTarget, 0.7, {ease:Bounce.easeOut , opacity:0, scale:1.5 });

@@ -1,7 +1,7 @@
 import React from 'react'
 import EachProject from './EachProject'
 import {PROJECTS} from '../Data/ProjectsData'
-import {TweenLite, Back, TweenMax ,Bounce} from "gsap";
+import {Back, TweenMax} from "gsap";
 
 
 
@@ -21,14 +21,12 @@ export default class Projects extends React.Component{
             redux:false,
             [name]:true
         })
-
-
-        // card-container
     }
 
 
     componentDidUpdate(){
-        TweenMax.staggerFrom(".front", 0.5, {scale:0 , ease:Back.easeOut},0.1);
+        let tween=TweenMax.staggerFrom(".front", 0.5, {scale:0 , ease:Back.easeOut},0.1);
+        tween.reverse()
     }
 
     handleClearFilterButton=()=>{

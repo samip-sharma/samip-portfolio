@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {Link as RouterLink} from 'react-router-dom'
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -41,10 +40,10 @@ export default class Navbar extends Component {
               </Link>
             </div>
 
-        <div onClick={this.handleHamburgerClick} class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div onClick={this.handleHamburgerClick} className="hamburger">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </div>
         
 
@@ -103,12 +102,6 @@ export default class Navbar extends Component {
                 Contact Me
               </Link>
               </div>
-
-              {/* <div className="nav-item">
-              <RouterLink to="/animation">
-                Animations
-              </RouterLink>
-            </div> */}
               
           </div>
 

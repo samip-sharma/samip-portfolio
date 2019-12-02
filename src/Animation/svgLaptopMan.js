@@ -1,5 +1,5 @@
 import React from 'react';
-import {TweenLite, Back, TweenMax ,Bounce, TimelineLite} from "gsap";
+import {TweenLite,TimelineLite} from "gsap";
  
 export default class SvgLaptopMan extends React.Component{
 

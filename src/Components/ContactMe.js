@@ -17,6 +17,15 @@ class ContactMe extends React.Component{
     })
   }
 
+  handleFormReset = (e) => {
+    this.setState({
+      name:'',
+      email:'',
+      message:'',
+      messageSent:false
+    })
+  }
+
   
   handleFormSubmit = (event) => {
     event.preventDefault()
@@ -43,13 +52,13 @@ class ContactMe extends React.Component{
          <div className={"section" + (dark ? " section-dark" : "")}>
           <div className="section-content" id={id}>
           <div className="contactme-wrapper">
-          <form onSubmit={(e)=> this.handleFormSubmit(e)}  className="contactme-form" target="_top" action="mailto:samip.sharma963@gmail.com" method="post" enctype="text/plain">
+          <form onSubmit={(e)=> this.handleFormSubmit(e)}  className="contactme-form" enctype="text/plain">
             <h1>GET IN TOUCH</h1>
-            <input value={this.state.name} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Name"  name="name" />
-            <input value={this.state.email} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Email" name="email" />
-            <input value={this.state.message} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Message" name="message" size="50" />
+            <input value={this.state.name} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Name"  name="name" required/>
+            <input value={this.state.email} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Email" name="email" required/>
+            <input value={this.state.message} onChange={this.handleInputChange} className="input-text" type="text" placeholder="Message" name="message" size="50" required />
             <input  className="submit-btn" type="submit" value="Send" />
-            <input className="submit-btn" type="reset" value="Reset" />
+            <input className="submit-btn" type="reset" onClick={this.handleFormReset} value="Reset" />
             {this.state.messageSent? <p>Message sent!!</p> : null}
             </form>
           </div>

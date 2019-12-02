@@ -11,13 +11,13 @@ render() {
             <div class="card">
                 
                 <div class="front">
-                   {imgFront?  <img src={require(`../image/${imgFront}`)} />: null}
+                   {imgFront?  <img src={require(`../image/${imgFront}`)} alt={name} />: null}
                     <h3>{name}</h3>
                     <p>{info}</p>
                             
                 </div>
                 <div class="back">
-                {imgBack?  <img src={require(`../image/${imgBack}`)} />: null}
+                {imgBack?  <img src={require(`../image/${imgBack}`)} alt={name}/>: null}
                     <div className="project-links-container">
                     {githubBackEnd? <div>
                         <a href={githubFrontEnd}>

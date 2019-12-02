@@ -6,8 +6,6 @@ import Skills from './Components/Skills'
 import AboutMe from './Components/AboutMe'
 import ContactMe from './Components/ContactMe'
 import { Switch, Route } from 'react-router-dom'
-import Animation from './Components/Animation'
-
 
 function App() {
   return (
@@ -34,7 +32,6 @@ function App() {
                 id="contactme-container"
               />
           </div>} />
-        <Route exact path='/animation' render={(routerProps)=> <Animation  {...routerProps}/>} />
       </Switch> 
     </React.Fragment>
   );
