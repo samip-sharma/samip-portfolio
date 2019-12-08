@@ -1,16 +1,16 @@
 
 import React from 'react';
 import Typing from 'react-typing-animation';
+import Cursor from './Cursor'
 
 
 function AnimatedTypingComponent(props){
   return(
   <React.Fragment>
     <Typing 
-    startDelay={100}
+    
     className="animated-typing-component" 
     speed={100}
-    onFinishedTyping={()=>{}}
     >
         <span >Hello.</span>
         <Typing.Backspace count={6} />
