@@ -1,28 +1,16 @@
-
 import React from 'react';
-import Typing from 'react-typing-animation';
-import Cursor from './Cursor'
+// import Typing from 'react-typing-animation';
+import Typical from 'react-typical'
 
 
 function AnimatedTypingComponent(props){
   return(
-  <React.Fragment>
-    <Typing 
-    
-    className="animated-typing-component" 
-    speed={100}
-    >
-        <span >Hello.</span>
-        <Typing.Backspace count={6} />
-        <Typing.Backspace count={6} />
-        <span>My name is Samip</span>
-        <Typing.Backspace count={16} />
-        <span>I am a web developer.</span>
-        <Typing.Backspace count={21} />
-        <span> click On the Image!!</span>
-        
-    </Typing>
-  </React.Fragment>)
+  <div className="animated-typing-component">
+<Typical 
+        steps={['Hello', 1000,"My name is Samip" ,1000, "I am a web developer." ,1000, "click On the Image!!" ,1000 ]}
+        wrapper="p"
+      />
+  </div>)
 };
 
 
