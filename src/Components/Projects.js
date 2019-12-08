@@ -23,10 +23,26 @@ export default class Projects extends React.Component{
         })
     }
 
+    shouldComponentUpdate(){
+       
+       let temp
+       
+       return true
+    }
+
 
     componentDidUpdate(){
-        let tween=TweenMax.staggerFrom(".front", 0.5, {scale:0 , ease:Back.easeOut},0.1);
+        let front = document.querySelectorAll(".front")
+        let temp = true
+        front.forEach((each)=>{
+            if(each.style.transform == "matrix(0, 0, 0, 0, 0, 0)" || each.style.transform === "" || each.style.transform == "matrix(1, 0, 0, 1, 0, 0)"){
+            }else{temp = false}
+        })
+
+        if (temp===true){
+            let tween=TweenMax.staggerFrom(".front", 0.5, {scale:0 , ease:Back.easeOut},0.1);
         tween.reverse()
+        }
     }
 
     handleClearFilterButton=()=>{
