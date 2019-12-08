@@ -10,7 +10,20 @@
   cursor: pointer; 
 }
 
+.animated-typing-component p{
+  margin: 30px;
+  padding-top:100px;
+}
 
+.svg-image-container{
+  min-width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .front-page-container{
+    flex-direction: column;
+  }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -317,7 +330,7 @@ text-align: center;
 .my-image{
   padding:0%;
   height:100%;
-  /* width: 100%; */
+  width: 50%;
 }
 
 .my-image img{
@@ -442,10 +455,34 @@ margin-left:50px;
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 800px) {
+  /* .my-info-container{
+    padding-top:80px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
+  .left-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .my-image{
+    width: ;
+  } */
+}
 
 
 @media only screen and (max-width: 600px) {
+
+  .my-image{
+    width:100%;
+  }
 
   .front-page-container{
     flex-direction: column;
@@ -472,6 +509,7 @@ margin-left:50px;
     width: 90%;
     padding:15px;
     margin:0;
+    margin-top:20%;
   }
 
   .my-info-pitch{
@@ -544,7 +582,7 @@ margin-left:50px;
 
 /* new svg */
 .laptop-man{
-  max-width: 50%;
+  max-width: 100%;
   background: black;
 }
 
