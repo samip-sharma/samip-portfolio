@@ -36,7 +36,7 @@ export default class Navbar extends Component {
                 offset={0}
                 duration={1000}
               >
-              <span> <img style={{height:"40px"}} src={require(`../image/logo.png`)} /></span> 
+              <span> <img style={{height:"60px", "margin-top":"-10px"}} src={require(`../image/logo.png`)} alt="logo"/></span> 
               </Link>
             </div>
 

@@ -10,9 +10,14 @@
   cursor: pointer; 
 }
 
+.animated-typing-component{
+  display: flex;
+  justify-content: center;
+}
+
 .animated-typing-component p{
   margin: 30px;
-  padding-top:100px;
+  padding-top:300px;
 }
 
 .svg-image-container{
@@ -164,6 +169,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 
@@ -280,6 +287,8 @@ display: block;
 .skill-card{
 padding:5%;
 text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
 
 }
 
